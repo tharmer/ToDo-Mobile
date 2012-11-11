@@ -1,0 +1,67 @@
+.tm {
+    display: none;
+}
+
+#vanish {
+	display: none;
+}
+
+
+div[data-role='content'] {
+    top: 40px;
+  	height:100%;
+    bottom: -60px;
+    left: 0px;
+    right: 0px;
+	padding:1px;
+}
+
+div[data-role='list'] {
+  overflow: scroll;
+  top: 0px;
+  width:95%;
+  height: 340px;
+  padding:10px;
+  left: 0px;
+  right: 0px;
+}
+
+#newitem {
+	display: none;
+}
+
+a[id='save']{
+	left: 20px;
+	width:120px;
+}
+
+a[id='cancel']{
+	right: -30px;
+	width:120px;
+}
+
+div.tickbox {
+	border: 2px solid #333;
+	line-height: 20px;
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+div.deleteButton {
+	display: none;
+	cursor:pointer;	
+	font-size: 8pt;
+	float: right;
+	border: 1px solid #900;
+	border-radius: 5px;
+	padding: 5px;
+	color: white;
+	background: rgb(173,0,0);
+}
+
+/*div.notext {
+	display:none;
+}*/

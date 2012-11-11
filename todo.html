@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Title</title> 
+  <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.css" />
+  <link rel="stylesheet" href="css/todo.css" />
+  <link rel="stylesheet" href="css/add2home.css">
+  <script src="lib/jquery.js"></script>
+  <script src="lib/jquery.mobile.js"></script>
+  <script src="lib/underscore.js"></script>
+  <script src="lib/backbone.js"></script>
+  <script src="lib/backbone.localStorage.js"></script>
+  <script src="lib/iscroll.js"></script>
+  <script src="lib/app.js"></script>
+  <script src="lib/add2home.js"></script>
+</head> 
+<body> 
+<div id="main" data-role="page">
+<div data-role="content">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <h1>{{-title}}</h1>
+    <a id="add" data-icon="plus" class="ui-btn-right" data-inline="true">Add</a>
+    <!--a id="delete" data-icon="grid" class="ui-btn-left" data-inline="true">Search</a-->
+  </div>
+
+  <!--div data-role="content"-->	
+  <div id="newitem">
+      <input type="text" id="textbox" placeholder="Enter To Do item"/>
+      <a id="save" data-role="button" data-inline="true" data-icon='check'  data-theme="b">Save</a>
+	  <a id="cancel" data-role="button" data-inline="true" data-icon='delete'  data-theme="b">Cancel</a>
+	
+</div>
+<div data-role="list">		
+    <ul id="list" data-role="listview">
+      <li>
+		<div id='tickbox' class='tickbox'>&nbsp</div>
+        <span class="text">{{-text}}</span>
+		<div id='deleteButton' class='deleteButton'>Delete</span>
+      </li>
+    </ul>
+</div>
+  		</div>
+	</div>
+	<!--div id='notext' data-role="popup" data-rel="dialog">You have not entered any text, Please enter a todo item !</div-->
+</body>
+</html>
+
