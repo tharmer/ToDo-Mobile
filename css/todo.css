@@ -8,26 +8,18 @@
 
 
 div[data-role='content'] {
-    top: 40px;
+	top: 40px;
   	height:100%;
     bottom: -60px;
     left: 0px;
     right: 0px;
-	padding:1px;
+	padding:0px;
 }
 
-div[data-role='list'] {
-  overflow: scroll;
-  top: 0px;
-  width:95%;
-  height: 340px;
-  padding:10px;
-  left: 0px;
-  right: 0px;
-}
 
 #newitem {
 	display: none;
+	height: 90px;
 }
 
 a[id='save']{
@@ -40,7 +32,7 @@ a[id='cancel']{
 	width:120px;
 }
 
-div.tickbox {
+span.tickbox {
 	border: 2px solid #333;
 	line-height: 20px;
 	font-size: 20px;
@@ -52,7 +44,6 @@ div.tickbox {
 
 div.deleteButton {
 	display: none;
-	cursor:pointer;	
 	font-size: 8pt;
 	float: right;
 	border: 1px solid #900;
@@ -62,6 +53,7 @@ div.deleteButton {
 	background: rgb(173,0,0);
 }
 
-/*div.notext {
-	display:none;
-}*/
+div[data-role='list'] {
+  width: 100%;
+
+}
